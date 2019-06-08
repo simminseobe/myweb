@@ -12,15 +12,22 @@ body {
   background: #f1f1f1;
 }
 
-/* Header/Blog Title */
+/* 제목/주제 */
 .header {
-  padding: 30px;
+  padding: 1px;
   text-align: center;
-  background: white;
+  background: black;
+  overflow: auto;
 }
 
 .header h1 {
   font-size: 50px;
+  color: white;
+}
+
+.header p {
+  font-size: 20px;
+  color: white;
 }
 
 /* Style the top navigation bar */
@@ -104,28 +111,39 @@ body {
     width: 100%;
   }
 }
+
+.imglogo {
+	position: relative;
+  bottom: 100px;
+  right: 500px;
+  float: right;
+}
+
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>청운대 학생들을 위한 프로그램 </h1>
-  <p>Resize the browser window to see the effect.</p>
+  <h1>민섭 수제 햄버거</h1>
+  <p>생고기로 만들어 살살 녹는 고기로 만든 수제 햄버거</p>
+  <img class="imglogo" src="./image/수제버거 로고.jpg" alt="수제버거 로고" style="width:150px; height:100px;">
 </div>
 
 <div class="topnav">
-  <a href="#">C 프로그래밍</a>
-  <a href="#">JAVA 프로그래밍</a>
-  <a href="#">SQL 프로그래밍</a>
+  <a href="#">홈</a>
+  <a href="#">메뉴</a>
+  <a href="#">이벤트</a>
+  <a href="#">홈서비스</a>
   <a href="#" style="float:right">Link</a>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>TITLE HEADING</h2>
+      <h2>고기를 매장에서 직접 구워드립니다.</h2>
       <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <div class="fakeimg" style="height:200px;">Image
+      </div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
