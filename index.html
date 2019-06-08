@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <style>
 * {
@@ -21,13 +22,18 @@ body {
 }
 
 .header h1 {
-  font-size: 50px;
+  position:  relative;
+  bottom: 10px;
+  font-size: 3vw;
   color: white;
+  text-align: center;
 }
 
-.header p {
-  font-size: 20px;
-  color: white;
+.header img{
+	position:  absolute;
+	top: 2.2vw;
+	right: 27vw;
+	float: right;
 }
 
 /* Style the top navigation bar */
@@ -42,7 +48,7 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 30px 100px;
   text-decoration: none;
 }
 
@@ -72,6 +78,8 @@ body {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
+  float: right;
+  overflow: auto;
 }
 
 /* Add a card effect for articles */
@@ -82,7 +90,7 @@ body {
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row::after {
   content: "";
   display: table;
   clear: both;
@@ -112,29 +120,20 @@ body {
   }
 }
 
-.imglogo {
-	position: relative;
-  bottom: 100px;
-  right: 500px;
-  float: right;
-}
-
 </style>
 </head>
 <body>
-
 <div class="header">
   <h1>민섭 수제 햄버거</h1>
-  <p>생고기로 만들어 살살 녹는 고기로 만든 수제 햄버거</p>
-  <img class="imglogo" src="./image/수제버거 로고.jpg" alt="수제버거 로고" style="width:150px; height:100px;">
+  <img src="./image/수제 버거 로고.jpg" alt="수제버거 로고" style="width:10%; height:10%;">
 </div>
 
 <div class="topnav">
+ <a href="#" style="float:left">---</a>
   <a href="#">홈</a>
   <a href="#">메뉴</a>
   <a href="#">이벤트</a>
   <a href="#">홈서비스</a>
-  <a href="#" style="float:right">Link</a>
 </div>
 
 <div class="row">
@@ -142,7 +141,8 @@ body {
     <div class="card">
       <h2>고기를 매장에서 직접 구워드립니다.</h2>
       <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image
+      <div class="fakeimg" style="height:20%;">
+      	<img src="./image/햄버거 패티.jpg" alt="햄버거 패티" style="width:100%; height:100%;">
       </div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
