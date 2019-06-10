@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<title>menu</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
@@ -34,6 +36,21 @@ body {
   top: 2.2vw;
   right: 27vw;
   float: right;
+  overflow: auto;
+}
+
+.header a{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 2vw 3vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1vw;
+  margin: 3vw 1vw;
+  float: left;
+  overflow: auto;
 }
 
 /* Footer */
@@ -42,6 +59,13 @@ body {
   text-align: center;
   background: #ddd;
   margin-top: 20px;
+}
+
+.footer a {
+   padding: 10px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 10px;
 }
 
 div.gallery {
@@ -92,8 +116,9 @@ div.desc {
 <body>
 
 <div class="header">
-  <h1>민섭 수제 햄버거</h1>
+  <h1>메뉴</h1>
   <img src="../image/수제 버거 로고.jpg" alt="수제버거 로고" style="width:10%; height:10%;">
+  <a href="../index.html">뒤로</a>
 </div>
 
 <h2>Responsive Image Gallery</h2>
@@ -104,7 +129,7 @@ div.desc {
     <a target="_blank" href="img_5terre.jpg">
       <img src="../image/쇠고기 와퍼.jpg" alt="쇠고기 와퍼" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">쇠고기 와퍼</div>
   </div>
 </div>
 
@@ -114,7 +139,7 @@ div.desc {
     <a target="_blank" href="img_forest.jpg">
       <img src="../image/더블 패티 와퍼.jpg" alt="더블 패티 와퍼" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">더블 패티 와퍼</div>
   </div>
 </div>
 
@@ -123,7 +148,7 @@ div.desc {
     <a target="_blank" href="img_lights.jpg">
       <img src="../image/어니언 베이컨 버거.jpg" alt="어니언 베이컨 버거" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">어니언 베이컨 버거</div>
   </div>
 </div>
 
@@ -132,19 +157,18 @@ div.desc {
     <a target="_blank" href="img_mountains.jpg">
       <img src="../image/에그 타르트 버거.jpg" alt="에그 타르트 버거" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">에그 타르트 버거</div>
   </div>
 </div>
 
 <div class="clearfix"></div>
-
 <div style="padding:6px;">
   <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
   <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
 </div>
 
 <div class="footer">
-  <h2>Login</h2>
+  <a href="../html/password.html">Login<a>
 </div>
 
 </body>
