@@ -15,8 +15,8 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-input[type=submit] {
-  width: 100%;
+a {
+   width: 100%;
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -26,7 +26,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+a:hover {
   background-color: #45a049;
 }
 
@@ -43,7 +43,7 @@ div {
 <p><strong>(계좌 번호에 - 를 생략해주세요.)</strong></p>
 
 <div>
-  <form action="../index.html" method="post">
+  <form action="file:///C:/Users/uuy/Documents/GitHub/myweb/index.html" method="post">
     <label for="address">주소</label>
     <input type="text" id="address" name="address" placeholder="주소" size="25" maxlength="20" required>
     <label for="burger">버거</label>
@@ -63,7 +63,9 @@ div {
     <label for="bank account number">계좌 번호</label>
     <input type="text" id="bank account number" name="accountnumber" placeholder="계좌 번호"required>
      <br><br>
-    <input type="submit" value="Submit">
+    <a href = "file:///C:/Users/uuy/Documents/GitHub/myweb/index.html">
+    완료
+  </a>
   </form>
 </div>
 <p>민섭 수제 버거를 이용해 주셔서 항상 감사드립니다.</p>
