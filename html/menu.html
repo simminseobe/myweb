@@ -3,118 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>menu</title>
+<link rel="stylesheet" type="text/css" href="../css/menu.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-/* 제목/주제 */
-.header {
-  padding: 1px;
-  text-align: center;
-  background: black;
-  overflow: auto;
-}
-
-.header h1 {
-  position:  relative;
-  bottom: 10px;
-  font-size: 3vw;
-  color: white;
-}
-
-.header img{
-  position:  absolute;
-  top: 2.2vw;
-  right: 35vw;
-  float: right;
-  overflow: auto;
-}
-
-.header a{
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 2vw 3vw;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1vw;
-  margin: 3vw 1vw;
-  float: left;
-  overflow: auto;
-  position: absolute;
-  bottom: 40vw;
-  left: 1vw;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-.footer a {
-   padding: 10px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 10px;
-}
-
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-</style>
 </head>
 <body>
 
@@ -129,38 +19,30 @@ div.desc {
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_5terre.jpg">
       <img src="../image/쇠고기 와퍼.jpg" alt="쇠고기 와퍼" width="600" height="400">
-    </a>
-    <div class="desc">쇠고기 와퍼</div>
+    <div class="desc">쇠고기 와퍼 <br> <strong>8000원</strong></div>
   </div>
 </div>
 
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_forest.jpg">
       <img src="../image/더블 패티 와퍼.jpg" alt="더블 패티 와퍼" width="600" height="400">
-    </a>
-    <div class="desc">더블 패티 와퍼</div>
+    <div class="desc">더블 패티 와퍼 <br> <strong>10000원</strong></div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_lights.jpg">
       <img src="../image/어니언 베이컨 버거.jpg" alt="어니언 베이컨 버거" width="600" height="400">
-    </a>
-    <div class="desc">어니언 베이컨 버거</div>
+    <div class="desc">어니언 베이컨 버거 <br> <strong>9000원</strong></div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_mountains.jpg">
       <img src="../image/에그 타르트 버거.jpg" alt="에그 타르트 버거" width="600" height="400">
-    </a>
-    <div class="desc">에그 타르트 버거</div>
+    <div class="desc">에그 타르트 버거 <br> <strong>8000원</strong></div>
   </div>
 </div>
 
@@ -168,6 +50,8 @@ div.desc {
 <div style="padding:6px;">
   <p>매장 가격과 다를 수도 있습니다.</p>
 </div>
+
+<a href="../html/customer.html" target="_blank">주문</a>
 
 <div class="footer">
   <a href="../html/password.html">Login<a>

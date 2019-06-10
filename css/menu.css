@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 3vw 10vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+/* 제목/주제 */
+.header {
+  padding: 1px;
+  text-align: center;
+  background: black;
+  overflow: auto;
+}
+
+.header h1 {
+  position:  relative;
+  bottom: 1vw;
+  left: 0vw;
+  font-size: 3vw;
+  color: white;
+}
+
+.header img{
+  position:  absolute;
+  top: 2.2vw;
+  right: 35vw;
+  float: right;
+  overflow: auto;
+}
+
+.header a{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 2vw 3vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1vw;
+  margin: 3vw 1vw;
+  float: left;
+  overflow: auto;
+  position: absolute;
+  bottom: 37vw;
+  left: 1vw;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.footer a {
+   padding: 10px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 10px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
